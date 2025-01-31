@@ -19,16 +19,57 @@ body{
     color:var(--text-color);
 }
 header{
-    padding: 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 35px 7%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    transition: all .5sec ease;
 }
-.navitems{
+.logo img{
+    width: 100%;
+    height: auto;
+}
+.navlist{
     display: flex;
-    justify-content: space-between;
-    gap: 60px;
 }
-.navbutton{
-        border-radius: 5px;
-        cursor: pointer;
+.navlist a{
+    display: inline-block;
+    margin: 0 35px ;
+    color: var(--text-color);
+    font: var(--p-font);
+    transition: all .6s ease;
+}
+.navlist a:hover{
+color: var(--main-color);
+}
+.right-content{
+    display: flex;
+    align-items: center;
+}
+.navbtn{
+    display: inline-block;
+     padding: 9px 24px;
+     background: transparent;
+     border: 2px solid var(--text-color);
+     border-radius: 7px;
+     color: var(--text-color);
+     font-size: 15px;
+     font-weight: 500;
+     transition: all .6s ease;
+}
+.navbtn:hover{
+    transform: translateX(-5px);
+    border: 2px solid var(--main-color); 
+}
+#menu-icon{
+    margin-left: 25px;
+    z-index: 10001;
+    font-size: 42px;
+    cursor: pointer;
+    display: none;
 }
