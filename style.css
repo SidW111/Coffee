@@ -73,3 +73,28 @@ color: var(--main-color);
     cursor: pointer;
     display: none;
 }
+section{
+    padding: 0 14%;
+    
+}
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(bg.png);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2rem;
+}
+.hero-img img{
+    width: 100%;
+    height: auto;
+}
+.hero-text h1{
+    font-size: var(--big-font);
+    font-weight: 900;
+    margin: 15px 0;
+}
