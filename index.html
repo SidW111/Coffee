@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header>
@@ -36,22 +37,40 @@
 
     <section class="hero">
       <div class="hero-text">
-         <h5>#Coffee for hot days</h5>
-         <h1>- Cold Brew</h1>
-         <p>Boosts your productivity and build your mood with a glass of coffee in the morning. Coffee has a stimulating effect.</p>
+         <h5 data-aos="fade-right" data-aos-duration="1400">#Coffee for hot days</h5>
+         <h1 data-aos="zoom-in-left" data-aos-duration="1400" data-aos-delay="200">- Cold Brew</h1>
+         <p data-aos="fade-right" data-aos-duration="1400" data-aos-delay="300">Boosts your productivity and build your mood with a glass of coffee in the morning. Coffee has a stimulating effect.</p>
 
-         <div class="main-hero">
+         <div class="main-hero" data-aos="flip-down" data-aos-duration="1400" data-aos-delay="400">
             <a href="#" class="btn">Order Now</a>
             <a href="#" class="price">$16.00 | <span>Regular Price</span></a>
          </div>
       </div>
 
-      <div class="hero-img">
+      <div class="hero-img" data-aos="zoom-in" data-aos-duration="1400">
         <img src="hero.png" alt="coffee">
       </div>
     </section>
 
+    <div class="icons">
+      <a href="#" data-aos="fade-in" data-aos-duration="1400" data-aos-delay="800"><i class="ri-facebook-fill"></i></a>
+      <a href="#" data-aos="fade-in" data-aos-duration="1400" data-aos-delay="800"><i class="ri-youtube-fill"></i></a>
+      <a href="#" data-aos="fade-in" data-aos-duration="1400" data-aos-delay="800"><i class="ri-twitter-fill"></i></a>
+    </div>
+
+    <div class="scroll" data-aos="zoom-out-down" data-aos-duration="1400" data-aos-delay="550">
+          <a href="#">
+            <i class="ri-scroll-to-bottom-line"></i>
+            Scroll Down
+          </a>
+    </div>
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset:1,
+      });
+    </script>
   </body>
 </html>
